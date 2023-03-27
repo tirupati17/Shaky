@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D58FCDA929D1E0AC00E9F3D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDA829D1E0AC00E9F3D8 /* AppDelegate.swift */; };
+		D58FCDAB29D1E0AC00E9F3D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDAA29D1E0AC00E9F3D8 /* SceneDelegate.swift */; };
+		D58FCDAD29D1E0AC00E9F3D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDAC29D1E0AC00E9F3D8 /* ViewController.swift */; };
+		D58FCDB029D1E0AC00E9F3D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58FCDAE29D1E0AC00E9F3D8 /* Main.storyboard */; };
+		D58FCDB229D1E0AD00E9F3D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58FCDB129D1E0AD00E9F3D8 /* Assets.xcassets */; };
+		D58FCDB529D1E0AD00E9F3D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58FCDB329D1E0AD00E9F3D8 /* LaunchScreen.storyboard */; };
+		D58FCDC029D1E0AD00E9F3D8 /* ShakyExampleSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDBF29D1E0AD00E9F3D8 /* ShakyExampleSwiftTests.swift */; };
+		D58FCDCA29D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDC929D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests.swift */; };
+		D58FCDCC29D1E0AE00E9F3D8 /* ShakyExampleSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDCB29D1E0AE00E9F3D8 /* ShakyExampleSwiftUITestsLaunchTests.swift */; };
+		D58FCDD929D1E10100E9F3D8 /* Shaky.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDD829D1E10100E9F3D8 /* Shaky.swift */; };
+		D58FCDDB29D1E52600E9F3D8 /* ShakyCategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDDA29D1E52600E9F3D8 /* ShakyCategoryPickerView.swift */; };
+		D58FCDDE29D1E59600E9F3D8 /* ShakyFeedbackFormDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDDD29D1E59600E9F3D8 /* ShakyFeedbackFormDelegate.swift */; };
+		D58FCDE029D1E5A900E9F3D8 /* ShakyFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDDF29D1E5A900E9F3D8 /* ShakyFeedback.swift */; };
+		D58FCDE229D1E5C300E9F3D8 /* ShakyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDE129D1E5C300E9F3D8 /* ShakyDelegate.swift */; };
+		D58FCDE629D1E60300E9F3D8 /* FeedbackFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDE529D1E60300E9F3D8 /* FeedbackFormViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D58FCDBC29D1E0AD00E9F3D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D58FCD9D29D1E0AC00E9F3D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D58FCDA429D1E0AC00E9F3D8;
+			remoteInfo = ShakyExampleSwift;
+		};
+		D58FCDC629D1E0AE00E9F3D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D58FCD9D29D1E0AC00E9F3D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D58FCDA429D1E0AC00E9F3D8;
+			remoteInfo = ShakyExampleSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D58FCDA529D1E0AC00E9F3D8 /* ShakyExampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShakyExampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D58FCDA829D1E0AC00E9F3D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D58FCDAA29D1E0AC00E9F3D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D58FCDAC29D1E0AC00E9F3D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D58FCDAF29D1E0AC00E9F3D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D58FCDB129D1E0AD00E9F3D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D58FCDB429D1E0AD00E9F3D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D58FCDB629D1E0AD00E9F3D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D58FCDBB29D1E0AD00E9F3D8 /* ShakyExampleSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShakyExampleSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D58FCDBF29D1E0AD00E9F3D8 /* ShakyExampleSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakyExampleSwiftTests.swift; sourceTree = "<group>"; };
+		D58FCDC529D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShakyExampleSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D58FCDC929D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakyExampleSwiftUITests.swift; sourceTree = "<group>"; };
+		D58FCDCB29D1E0AE00E9F3D8 /* ShakyExampleSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakyExampleSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D58FCDD829D1E10100E9F3D8 /* Shaky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shaky.swift; sourceTree = "<group>"; };
+		D58FCDDA29D1E52600E9F3D8 /* ShakyCategoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakyCategoryPickerView.swift; sourceTree = "<group>"; };
+		D58FCDDD29D1E59600E9F3D8 /* ShakyFeedbackFormDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakyFeedbackFormDelegate.swift; sourceTree = "<group>"; };
+		D58FCDDF29D1E5A900E9F3D8 /* ShakyFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakyFeedback.swift; sourceTree = "<group>"; };
+		D58FCDE129D1E5C300E9F3D8 /* ShakyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakyDelegate.swift; sourceTree = "<group>"; };
+		D58FCDE529D1E60300E9F3D8 /* FeedbackFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackFormViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D58FCDA229D1E0AC00E9F3D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D58FCDB829D1E0AD00E9F3D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D58FCDC229D1E0AE00E9F3D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D58FCD9C29D1E0AC00E9F3D8 = {
+			isa = PBXGroup;
+			children = (
+				D58FCDA729D1E0AC00E9F3D8 /* ShakyExampleSwift */,
+				D58FCDBE29D1E0AD00E9F3D8 /* ShakyExampleSwiftTests */,
+				D58FCDC829D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests */,
+				D58FCDA629D1E0AC00E9F3D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D58FCDA629D1E0AC00E9F3D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D58FCDA529D1E0AC00E9F3D8 /* ShakyExampleSwift.app */,
+				D58FCDBB29D1E0AD00E9F3D8 /* ShakyExampleSwiftTests.xctest */,
+				D58FCDC529D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D58FCDA729D1E0AC00E9F3D8 /* ShakyExampleSwift */ = {
+			isa = PBXGroup;
+			children = (
+				D58FCDDC29D1E56E00E9F3D8 /* Shaky */,
+				D58FCDA829D1E0AC00E9F3D8 /* AppDelegate.swift */,
+				D58FCDAA29D1E0AC00E9F3D8 /* SceneDelegate.swift */,
+				D58FCDAC29D1E0AC00E9F3D8 /* ViewController.swift */,
+				D58FCDAE29D1E0AC00E9F3D8 /* Main.storyboard */,
+				D58FCDB129D1E0AD00E9F3D8 /* Assets.xcassets */,
+				D58FCDB329D1E0AD00E9F3D8 /* LaunchScreen.storyboard */,
+				D58FCDB629D1E0AD00E9F3D8 /* Info.plist */,
+			);
+			path = ShakyExampleSwift;
+			sourceTree = "<group>";
+		};
+		D58FCDBE29D1E0AD00E9F3D8 /* ShakyExampleSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				D58FCDBF29D1E0AD00E9F3D8 /* ShakyExampleSwiftTests.swift */,
+			);
+			path = ShakyExampleSwiftTests;
+			sourceTree = "<group>";
+		};
+		D58FCDC829D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D58FCDC929D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests.swift */,
+				D58FCDCB29D1E0AE00E9F3D8 /* ShakyExampleSwiftUITestsLaunchTests.swift */,
+			);
+			path = ShakyExampleSwiftUITests;
+			sourceTree = "<group>";
+		};
+		D58FCDDC29D1E56E00E9F3D8 /* Shaky */ = {
+			isa = PBXGroup;
+			children = (
+				D58FCDD829D1E10100E9F3D8 /* Shaky.swift */,
+				D58FCDDA29D1E52600E9F3D8 /* ShakyCategoryPickerView.swift */,
+				D58FCDDD29D1E59600E9F3D8 /* ShakyFeedbackFormDelegate.swift */,
+				D58FCDDF29D1E5A900E9F3D8 /* ShakyFeedback.swift */,
+				D58FCDE129D1E5C300E9F3D8 /* ShakyDelegate.swift */,
+				D58FCDE529D1E60300E9F3D8 /* FeedbackFormViewController.swift */,
+			);
+			path = Shaky;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D58FCDA429D1E0AC00E9F3D8 /* ShakyExampleSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D58FCDCF29D1E0AE00E9F3D8 /* Build configuration list for PBXNativeTarget "ShakyExampleSwift" */;
+			buildPhases = (
+				D58FCDA129D1E0AC00E9F3D8 /* Sources */,
+				D58FCDA229D1E0AC00E9F3D8 /* Frameworks */,
+				D58FCDA329D1E0AC00E9F3D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShakyExampleSwift;
+			productName = ShakyExampleSwift;
+			productReference = D58FCDA529D1E0AC00E9F3D8 /* ShakyExampleSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D58FCDBA29D1E0AD00E9F3D8 /* ShakyExampleSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D58FCDD229D1E0AE00E9F3D8 /* Build configuration list for PBXNativeTarget "ShakyExampleSwiftTests" */;
+			buildPhases = (
+				D58FCDB729D1E0AD00E9F3D8 /* Sources */,
+				D58FCDB829D1E0AD00E9F3D8 /* Frameworks */,
+				D58FCDB929D1E0AD00E9F3D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D58FCDBD29D1E0AD00E9F3D8 /* PBXTargetDependency */,
+			);
+			name = ShakyExampleSwiftTests;
+			productName = ShakyExampleSwiftTests;
+			productReference = D58FCDBB29D1E0AD00E9F3D8 /* ShakyExampleSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D58FCDC429D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D58FCDD529D1E0AE00E9F3D8 /* Build configuration list for PBXNativeTarget "ShakyExampleSwiftUITests" */;
+			buildPhases = (
+				D58FCDC129D1E0AE00E9F3D8 /* Sources */,
+				D58FCDC229D1E0AE00E9F3D8 /* Frameworks */,
+				D58FCDC329D1E0AE00E9F3D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D58FCDC729D1E0AE00E9F3D8 /* PBXTargetDependency */,
+			);
+			name = ShakyExampleSwiftUITests;
+			productName = ShakyExampleSwiftUITests;
+			productReference = D58FCDC529D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D58FCD9D29D1E0AC00E9F3D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D58FCDA429D1E0AC00E9F3D8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					D58FCDBA29D1E0AD00E9F3D8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D58FCDA429D1E0AC00E9F3D8;
+					};
+					D58FCDC429D1E0AE00E9F3D8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D58FCDA429D1E0AC00E9F3D8;
+					};
+				};
+			};
+			buildConfigurationList = D58FCDA029D1E0AC00E9F3D8 /* Build configuration list for PBXProject "ShakyExampleSwift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D58FCD9C29D1E0AC00E9F3D8;
+			productRefGroup = D58FCDA629D1E0AC00E9F3D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D58FCDA429D1E0AC00E9F3D8 /* ShakyExampleSwift */,
+				D58FCDBA29D1E0AD00E9F3D8 /* ShakyExampleSwiftTests */,
+				D58FCDC429D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D58FCDA329D1E0AC00E9F3D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D58FCDB529D1E0AD00E9F3D8 /* LaunchScreen.storyboard in Resources */,
+				D58FCDB229D1E0AD00E9F3D8 /* Assets.xcassets in Resources */,
+				D58FCDB029D1E0AC00E9F3D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D58FCDB929D1E0AD00E9F3D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D58FCDC329D1E0AE00E9F3D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D58FCDA129D1E0AC00E9F3D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D58FCDE629D1E60300E9F3D8 /* FeedbackFormViewController.swift in Sources */,
+				D58FCDAD29D1E0AC00E9F3D8 /* ViewController.swift in Sources */,
+				D58FCDE229D1E5C300E9F3D8 /* ShakyDelegate.swift in Sources */,
+				D58FCDA929D1E0AC00E9F3D8 /* AppDelegate.swift in Sources */,
+				D58FCDD929D1E10100E9F3D8 /* Shaky.swift in Sources */,
+				D58FCDDE29D1E59600E9F3D8 /* ShakyFeedbackFormDelegate.swift in Sources */,
+				D58FCDDB29D1E52600E9F3D8 /* ShakyCategoryPickerView.swift in Sources */,
+				D58FCDE029D1E5A900E9F3D8 /* ShakyFeedback.swift in Sources */,
+				D58FCDAB29D1E0AC00E9F3D8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D58FCDB729D1E0AD00E9F3D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D58FCDC029D1E0AD00E9F3D8 /* ShakyExampleSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D58FCDC129D1E0AE00E9F3D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D58FCDCC29D1E0AE00E9F3D8 /* ShakyExampleSwiftUITestsLaunchTests.swift in Sources */,
+				D58FCDCA29D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D58FCDBD29D1E0AD00E9F3D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D58FCDA429D1E0AC00E9F3D8 /* ShakyExampleSwift */;
+			targetProxy = D58FCDBC29D1E0AD00E9F3D8 /* PBXContainerItemProxy */;
+		};
+		D58FCDC729D1E0AE00E9F3D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D58FCDA429D1E0AC00E9F3D8 /* ShakyExampleSwift */;
+			targetProxy = D58FCDC629D1E0AE00E9F3D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D58FCDAE29D1E0AC00E9F3D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D58FCDAF29D1E0AC00E9F3D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D58FCDB329D1E0AD00E9F3D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D58FCDB429D1E0AD00E9F3D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D58FCDCD29D1E0AE00E9F3D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D58FCDCE29D1E0AE00E9F3D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D58FCDD029D1E0AE00E9F3D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShakyExampleSwift/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.ShakyExampleSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D58FCDD129D1E0AE00E9F3D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShakyExampleSwift/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.ShakyExampleSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D58FCDD329D1E0AE00E9F3D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.ShakyExampleSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShakyExampleSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShakyExampleSwift";
+			};
+			name = Debug;
+		};
+		D58FCDD429D1E0AE00E9F3D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.ShakyExampleSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShakyExampleSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShakyExampleSwift";
+			};
+			name = Release;
+		};
+		D58FCDD629D1E0AE00E9F3D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.ShakyExampleSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShakyExampleSwift;
+			};
+			name = Debug;
+		};
+		D58FCDD729D1E0AE00E9F3D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.ShakyExampleSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShakyExampleSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D58FCDA029D1E0AC00E9F3D8 /* Build configuration list for PBXProject "ShakyExampleSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D58FCDCD29D1E0AE00E9F3D8 /* Debug */,
+				D58FCDCE29D1E0AE00E9F3D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D58FCDCF29D1E0AE00E9F3D8 /* Build configuration list for PBXNativeTarget "ShakyExampleSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D58FCDD029D1E0AE00E9F3D8 /* Debug */,
+				D58FCDD129D1E0AE00E9F3D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D58FCDD229D1E0AE00E9F3D8 /* Build configuration list for PBXNativeTarget "ShakyExampleSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D58FCDD329D1E0AE00E9F3D8 /* Debug */,
+				D58FCDD429D1E0AE00E9F3D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D58FCDD529D1E0AE00E9F3D8 /* Build configuration list for PBXNativeTarget "ShakyExampleSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D58FCDD629D1E0AE00E9F3D8 /* Debug */,
+				D58FCDD729D1E0AE00E9F3D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D58FCD9D29D1E0AC00E9F3D8 /* Project object */;
+}
