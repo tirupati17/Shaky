@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ShakyDelegate {
         // Override point for customization after application launch.
         
         shaky.delegate = self
+        shaky.shakeThreshold = 1.0
         shaky.start()
 
         return true

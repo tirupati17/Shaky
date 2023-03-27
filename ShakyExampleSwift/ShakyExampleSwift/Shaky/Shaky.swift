@@ -50,7 +50,11 @@ public class Shaky: NSObject {
 
                 if deltaX > self.shakeThreshold && deltaY > self.shakeThreshold && deltaZ > self.shakeThreshold {
                     DispatchQueue.main.async {
-                        let feedbackForm = FeedbackFormViewController(delegate: self)
+                        let documentsDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+                        let fileName = "feedback_screenshot.png"
+                        let filePath = "\(documentsDirectory)/\(fileName)"
+                        
+                        let feedbackForm = FeedbackFormViewController(delegate: self, screenshotFilePath: filePath)
                         feedbackForm.delegate = self
                         self.feedbackFormViewController = feedbackForm
                         let rootViewController = UIApplication.shared.windows.first?.rootViewController

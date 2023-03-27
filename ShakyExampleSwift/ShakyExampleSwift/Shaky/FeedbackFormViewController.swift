@@ -13,14 +13,15 @@ public class FeedbackFormViewController: UIViewController, UIImagePickerControll
     private let descriptionTextView = UITextView()
     private let categoryPickerView = ShakyCategoryPickerView()
     private let imageView = UIImageView()
-    private let addImageButton = UIButton()
     private let submitButton = UIButton()
     private let cancelButton = UIButton()
     private var imagePickerCompletion: ((UIImage?) -> Void)?
     weak var delegate: ShakyFeedbackFormDelegate?
+    var feedbackScreenshotFilePath: String?
     
-    public init(delegate: ShakyFeedbackFormDelegate) {
+    public init(delegate: ShakyFeedbackFormDelegate, screenshotFilePath: String?) {
         self.delegate = delegate
+        self.feedbackScreenshotFilePath = screenshotFilePath
         super.init(nibName: nil, bundle: nil)
         self.modalPresentationStyle = .overFullScreen
         self.modalTransitionStyle = .crossDissolve
@@ -32,6 +33,10 @@ public class FeedbackFormViewController: UIViewController, UIImagePickerControll
     
     override public func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Take screenshot of parent app view
+        let parentAppView = UIApplication.shared.windows.first { $0.isKeyWindow }?.rootViewController?.view
+        let screenshotImage = parentAppView?.takeScreenshot()
         
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         self.view.addSubview(self.containerView)
@@ -70,16 +75,35 @@ public class FeedbackFormViewController: UIViewController, UIImagePickerControll
         self.imageView.leadingAnchor.constraint(equalTo: self.containerView.leadingAnchor, constant: 16).isActive = true
         self.imageView.topAnchor.constraint(equalTo: self.categoryPickerView.bottomAnchor, constant: 16).isActive = true
         self.imageView.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        self.imageView.heightAnchor.constraint(equalToConstant: 100).isActive = true
-        
-        self.addImageButton.translatesAutoresizingMaskIntoConstraints = false
-        self.addImageButton.setTitle("Add Image", for: .normal)
-        self.addImageButton.setTitleColor(.black, for: .normal)
-        self.addImageButton.addTarget(self, action: #selector(self.addImage), for: .touchUpInside)
-        self.containerView.addSubview(self.addImageButton)
-        self.addImageButton.leadingAnchor.constraint(equalTo: self.imageView.trailingAnchor, constant: 16).isActive = true
-        self.addImageButton.centerYAnchor.constraint(equalTo: self.imageView.centerYAnchor).isActive = true
-        
+        self.imageView.heightAnchor.constraint(equalToConstant: 100).isActive = true    // Take screenshot of parent app's view and set it as the thumbnail image
+        if let parentView = self.presentingViewController?.view {
+            let renderer = UIGraphicsImageRenderer(bounds: parentView.bounds)
+            let screenshotImage = renderer.image { _ in
+                parentView.drawHierarchy(in: parentView.bounds, afterScreenUpdates: true)
+            }
+            let thumbnailImage = screenshotImage.resize(to: CGSize(width: 100, height: 100))
+
+            self.imageView.image = thumbnailImage
+            
+            // Save the actual screenshot image to be passed in the feedback object
+            let screenshotData = screenshotImage.jpegData(compressionQuality: 0.8)
+            let tempDirectory = NSTemporaryDirectory()
+            let tempFilePath = "\(tempDirectory)/screenshot.jpeg"
+            do {
+                try screenshotData?.write(to: URL(fileURLWithPath: tempFilePath))
+            } catch {
+                print("Failed to save screenshot image to temp file: \(error.localizedDescription)")
+            }
+            self.feedbackScreenshotFilePath = tempFilePath
+            
+            // Load the screenshot image and set it as the thumbnail
+            if let screenshotFilePath = feedbackScreenshotFilePath, let screenshotImage = UIImage(contentsOfFile: screenshotFilePath) {
+                self.imageView.image = screenshotImage
+            } else {
+                self.imageView.image = nil
+            }
+        }
+                
         self.submitButton.translatesAutoresizingMaskIntoConstraints = false
         self.submitButton.setTitle("Submit", for: .normal)
         self.submitButton.setTitleColor(.black, for: .normal)
@@ -101,31 +125,46 @@ public class FeedbackFormViewController: UIViewController, UIImagePickerControll
         self.cancelButton.heightAnchor.constraint(equalToConstant: 44).isActive = true
     }
     
-    @objc private func addImage() {
+    @objc private func attachImage() {
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
         imagePickerController.sourceType = .photoLibrary
         imagePickerController.allowsEditing = true
         
-        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-        alert.addAction(UIAlertAction(title: "Take a Photo", style: .default, handler: { _ in
-            imagePickerController.sourceType = .camera
-            self.present(imagePickerController, animated: true)
-        }))
-        alert.addAction(UIAlertAction(title: "Choose from Library", style: .default, handler: { _ in
-            self.present(imagePickerController, animated: true)
-        }))
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        
-        self.present(alert, animated: true)
+        self.present(imagePickerController, animated: true)
     }
     
     @objc private func submit() {
+        // Auto screenshot the parent app view
         let feedback = ShakyFeedback(description: self.descriptionTextView.text, category: self.categoryPickerView.selectedCategory ?? String(), image: self.imageView.image)
         self.delegate?.feedbackFormDidSubmit(feedback)
     }
     
     @objc private func cancel() {
-        self.delegate?.feedbackFormDidCancel()
+        self.dismiss(animated: true, completion: nil)
+    }
+
+}
+
+extension UIView {
+    func takeScreenshot() -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(bounds.size, false, UIScreen.main.scale)
+        drawHierarchy(in: bounds, afterScreenUpdates: true)
+        let screenshotImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return screenshotImage
+    }
+}
+
+extension UIImage {
+    func resize(to size: CGSize) -> UIImage? {
+        let format = UIGraphicsImageRendererFormat()
+        format.scale = 1
+        format.opaque = true
+        let renderer = UIGraphicsImageRenderer(size: size, format: format)
+        let image = renderer.image { _ in
+            draw(in: CGRect(origin: .zero, size: size))
+        }
+        return image
     }
 }
