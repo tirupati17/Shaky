@@ -14,8 +14,6 @@
 		D58FCDB229D1E0AD00E9F3D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58FCDB129D1E0AD00E9F3D8 /* Assets.xcassets */; };
 		D58FCDB529D1E0AD00E9F3D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58FCDB329D1E0AD00E9F3D8 /* LaunchScreen.storyboard */; };
 		D58FCDC029D1E0AD00E9F3D8 /* ShakyExampleSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDBF29D1E0AD00E9F3D8 /* ShakyExampleSwiftTests.swift */; };
-		D58FCDCA29D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDC929D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests.swift */; };
-		D58FCDCC29D1E0AE00E9F3D8 /* ShakyExampleSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDCB29D1E0AE00E9F3D8 /* ShakyExampleSwiftUITestsLaunchTests.swift */; };
 		D58FCDD929D1E10100E9F3D8 /* Shaky.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDD829D1E10100E9F3D8 /* Shaky.swift */; };
 		D58FCDDB29D1E52600E9F3D8 /* ShakyCategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDDA29D1E52600E9F3D8 /* ShakyCategoryPickerView.swift */; };
 		D58FCDDE29D1E59600E9F3D8 /* ShakyFeedbackFormDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FCDDD29D1E59600E9F3D8 /* ShakyFeedbackFormDelegate.swift */; };
@@ -53,8 +51,6 @@
 		D58FCDBB29D1E0AD00E9F3D8 /* ShakyExampleSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShakyExampleSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58FCDBF29D1E0AD00E9F3D8 /* ShakyExampleSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakyExampleSwiftTests.swift; sourceTree = "<group>"; };
 		D58FCDC529D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShakyExampleSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D58FCDC929D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakyExampleSwiftUITests.swift; sourceTree = "<group>"; };
-		D58FCDCB29D1E0AE00E9F3D8 /* ShakyExampleSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakyExampleSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D58FCDD829D1E10100E9F3D8 /* Shaky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shaky.swift; sourceTree = "<group>"; };
 		D58FCDDA29D1E52600E9F3D8 /* ShakyCategoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakyCategoryPickerView.swift; sourceTree = "<group>"; };
 		D58FCDDD29D1E59600E9F3D8 /* ShakyFeedbackFormDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakyFeedbackFormDelegate.swift; sourceTree = "<group>"; };
@@ -134,8 +130,6 @@
 		D58FCDC829D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D58FCDC929D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests.swift */,
-				D58FCDCB29D1E0AE00E9F3D8 /* ShakyExampleSwiftUITestsLaunchTests.swift */,
 			);
 			path = ShakyExampleSwiftUITests;
 			sourceTree = "<group>";
@@ -308,8 +302,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D58FCDCC29D1E0AE00E9F3D8 /* ShakyExampleSwiftUITestsLaunchTests.swift in Sources */,
-				D58FCDCA29D1E0AE00E9F3D8 /* ShakyExampleSwiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
