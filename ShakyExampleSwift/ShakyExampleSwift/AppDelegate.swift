@@ -34,10 +34,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ShakyDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-    func shakyFormSubmitted(_ feedback: ShakyFeedback) {
-        // Implement this method as required by the ShakyDelegate protocol
-        print("Feedback submitted")
+    func shakyDidSubmit(_ feedback: ShakyFeedback) {
+        // Handle feedback submission
     }
-
+    
+    func shakyDidCancel() {
+        // Handle feedback cancellation
+    }
 }
 

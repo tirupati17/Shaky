@@ -8,5 +8,6 @@
 import Foundation
 
 public protocol ShakyDelegate: AnyObject {
-    func shakyFormSubmitted(_ feedback: ShakyFeedback)
+    func shakyDidSubmit(_ feedback: ShakyFeedback)    
+    func shakyDidCancel()
 }
