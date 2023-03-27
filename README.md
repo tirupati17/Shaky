@@ -57,27 +57,21 @@ class ViewController: UIViewController, ShakyDelegate {
 }
 ```
 
-3. (Optional) Set the Shaky.analytics closure to handle sending feedback events to your analytics platform:
+3. (Optional) Example of Firbase using Shaky.analytics closure to handle sending feedback events to your analytics platform:
 
 ```swift
-Shaky.analytics = { feedback in
-    Analytics.logEvent("feedback_submitted", parameters: [
-        "description": feedback.description,
-        "category": feedback.category ?? "",
-        "has_image": feedback.image != nil
-    ])
-}
+    func shakyDidSubmit(_ feedback: ShakyFeedback) {
+        Shaky.analytics = { feedback in
+            Analytics.logEvent("feedback_submitted", parameters: [
+                "description": feedback.description,
+                "category": feedback.category ?? "",
+                "has_image": feedback.image != nil
+            ])
+        }
+    }
 ```
 
-4. Customize the feedback form by creating a ShakyView instance:
-
-```swift
-let feedbackView = ShakyView()
-feedbackView.delegate = self
-feedbackView.present()
-```
-
-5. (Optional) Customize the shake threshold by passing a value to the start() method:
+4. (Optional) Customize the shake threshold by passing a value to the start() method:
 
 ```swift
 Shaky.sharedInstance.start(shakeThreshold: 3)
